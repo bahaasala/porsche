@@ -1,39 +1,142 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-button, summary {
+button,
+summary {
 	cursor: pointer;
 }
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #fff;
 }
 
 
 
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
+/* General */
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+	color: var(--color-text);
+	background-color: var(--color-background);
+	margin: 0px;
 }
 
+img {
+	width: 100%;
+	;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li,
+span {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation bar */
+header nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: flex-start;
+	margin: 0 7vw;
+}
+
+/* Cars in menu */
+header nav ul a li img {
+	/* width: 196px;
+    height: 110px; */
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	list-style-type: none;
+}
+
+header nav ul a {
+	padding: 0 0.25rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+header nav ul a:hover p {
+	color: #f00;
+}
+
+header nav ul p {
+	margin: 0;
+	margin-top: -10px;
+	color: #000;
+}
+
+
+/* main logo */
+header a.site-logo img {
+	width: 8.3125rem;
+}
+
+.site-logo {
+	z-index: 9999;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: flex-start;
+	border: 0.0625rem solid #e3e4e5;
+	position: relative;
+	background: #ffffff;
+	height: 8.3125rem;
+	margin-bottom: -0.9375rem;
+	padding: 1.75rem 0.25rem 1.875rem 0.25rem;
+}
+
+/* Ordering items in menu */
+header nav ul:nth-child(2) {
+	order: 0;
+	flex: 1 1 auto;
+	align-self: flex-start;
+}
+
+header nav ul:last-child {
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+}
+
+/* mega dropdown menu */
+#menu-dropdown {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:auto;
+	z-index:999;
+	display:none;
+    border-top: 2px solid #e3e4e5;
+}
+.dropdown-content {
+	background:#ffffff;
+	color:#fff;
+	padding:20px;
+}
+#menu-dropdown {
+    top: 118px;
+    z-index: 0;
+}
