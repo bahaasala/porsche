@@ -69,16 +69,18 @@ header nav ul {
 }
 
 header nav ul li {
-	list-style-type: none;
-}
-
-header nav ul a {
 	padding: 0 0.25rem;
-	text-decoration: none;
+	list-style-type: none;
 	text-align: center;
 }
 
-header nav ul a:hover p {
+/* header nav ul a {
+	padding: 0 0.25rem;
+	text-decoration: none;
+	text-align: center;
+} */
+
+header nav ul li:hover p {
 	color: #f00;
 }
 
@@ -131,10 +133,16 @@ header nav ul:last-child {
 	display:none;
     border-top: 2px solid #e3e4e5;
 }
+
+#menu-dropdown ul{
+	display: block;
+	color: #000;
+}
 .dropdown-content {
+	display: flex;
 	background:#ffffff;
 	color:#fff;
-	padding:20px;
+	padding: 0 7vw;
 }
 #menu-dropdown {
     top: 118px;
