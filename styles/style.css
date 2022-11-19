@@ -81,11 +81,11 @@ header nav ul p {
 
 
 /* main logo */
-header a.site-logo img {
+header>nav>a>img {
 	width: 8.3125rem;
 }
 
-.site-logo {
+header>nav>a>img {
 	z-index: 9999;
 	order: 0;
 	flex: 0 1 auto;
@@ -112,29 +112,57 @@ header nav ul:last-child {
 }
 
 /* mega dropdown menu */
-#menu-dropdown {
-	position: fixed;
+header nav nav {
+	position: absolute;
 	top: 118px;
 	left: 0;
 	width: 100%;
-	overflow: hidden;
+	margin: 0;
+	display: flex;
+	max-height: 0px;
 	transition: all .5s ease-in-out;
-	max-height: 0;
+	background: #ffffff;
+	padding: 0 7vw;
+	overflow: hidden;
 }
 
-#menu-dropdown ul {
+header nav nav ul {
 	display: block;
 	color: #000;
 }
 
-.dropdown-active #menu-dropdown {
-	display: block;
+.dropdown-active nav {
 	max-height: 1000px;
 }
 
-.dropdown-content {
+header nav nav img {
+	flex: 1;
+}
+
+/* Models homepage */
+.models ul {
 	display: flex;
-	background: #ffffff;
-	color: #fff;
-	padding: 0 7vw;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0;
+}
+
+.models>ul>li {
+	flex: 0 0 33.333333%;
+    list-style-type: none;
+}
+
+.actueel {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0;
+}
+
+.actueel h2{
+	flex: 1 0 100%;
+}
+
+.actueel a{
+	flex: 1 0 21%;
 }
