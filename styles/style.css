@@ -59,11 +59,6 @@ header nav {
 }
 
 /* Cars in menu */
-header nav ul a li img {
-	/* width: 196px;
-    height: 110px; */
-}
-
 header nav ul {
 	display: flex;
 }
@@ -73,12 +68,6 @@ header nav ul li {
 	list-style-type: none;
 	text-align: center;
 }
-
-/* header nav ul a {
-	padding: 0 0.25rem;
-	text-decoration: none;
-	text-align: center;
-} */
 
 header nav ul li:hover p {
 	color: #f00;
@@ -124,27 +113,28 @@ header nav ul:last-child {
 
 /* mega dropdown menu */
 #menu-dropdown {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:auto;
-	z-index:999;
-	display:none;
-    border-top: 2px solid #e3e4e5;
+	position: fixed;
+	top: 118px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+	max-height: 0;
 }
 
-#menu-dropdown ul{
+#menu-dropdown ul {
 	display: block;
 	color: #000;
 }
+
+.dropdown-active #menu-dropdown {
+	display: block;
+	max-height: 1000px;
+}
+
 .dropdown-content {
 	display: flex;
-	background:#ffffff;
-	color:#fff;
+	background: #ffffff;
+	color: #fff;
 	padding: 0 7vw;
-}
-#menu-dropdown {
-    top: 118px;
-    z-index: 0;
 }
