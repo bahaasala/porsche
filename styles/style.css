@@ -19,6 +19,8 @@ summary {
 	/* startje */
 	--color-text: #111;
 	--color-background: #fff;
+	--margin: 0 7vw;
+	--padding: 0 7vw;
 }
 
 
@@ -47,6 +49,30 @@ span {
 	font-family: 'Roboto', sans-serif;
 }
 
+section {
+	margin: var(--margin);
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	transition: 0.2s ease-in-out;
+}
+
+a:hover {
+	color: #f00;
+	transition: 0.2s ease-in-out;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Headings */
+h2 {
+	font-size: 44px;
+}
+
 /* Navigation bar */
 header nav {
 	display: flex;
@@ -55,7 +81,7 @@ header nav {
 	justify-content: flex-start;
 	align-content: stretch;
 	align-items: flex-start;
-	margin: 0 7vw;
+	margin: var(--margin);
 }
 
 /* Cars in menu */
@@ -63,14 +89,11 @@ header nav ul {
 	display: flex;
 }
 
-header nav ul li {
+header nav ul button {
 	padding: 0 0.25rem;
-	list-style-type: none;
+	/* list-style-type: none; */
 	text-align: center;
-}
-
-header nav ul li:hover p {
-	color: #f00;
+	cursor: default;
 }
 
 header nav ul p {
@@ -122,13 +145,55 @@ header nav nav {
 	max-height: 0px;
 	transition: all .5s ease-in-out;
 	background: #ffffff;
-	padding: 0 7vw;
+	padding: var(--margin);
 	overflow: hidden;
 }
 
 header nav nav ul {
 	display: block;
 	color: #000;
+}
+
+/* Mega menu dropdown lists */
+/* first list */
+header nav nav ul:first-of-type {
+	width: 80%;
+	padding-right: 40px;
+}
+
+header nav nav ul:first-of-type li {
+	width: 100%;
+	margin: 10px 0px;
+	padding: 20px 0px;
+	text-align: left;
+	border-bottom: solid 0.5px #ccc;
+}
+
+header nav nav ul:first-of-type>li:first-of-type {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/* models list (second) */
+header nav nav ul:last-child {
+	padding: 0;
+	width: 100%;
+	flex: 1 1 auto;
+}
+
+header nav nav ul:last-child li {
+	width: 100%;
+	margin: 10px 0px;
+	border: solid 1px;
+	padding: 15px 20px;
+	text-align: left;
+	transition: 0.25s ease-in-out;
+}
+
+header nav nav ul:last-child li:hover {
+	transition: 0.25s ease-in-out;
+	background-color: #000;
+	color: #ffffff;
 }
 
 .dropdown-active nav {
@@ -145,24 +210,117 @@ header nav nav img {
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-left: 0;
+	margin: 0;
+	/* display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px; */
 }
 
 .models>ul>li {
+	position: relative;
 	flex: 0 0 33.333333%;
-    list-style-type: none;
+	/* list-style-type: none; */
+	margin-bottom: -4px;
 }
 
-.actueel {
+.models .model-content {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	padding: 15px 30px 50px 30px;
+}
+
+.models p {
+	color: #fff;
+	font-weight: bold;
+}
+
+.models a {
+	background-color: #fff;
+	padding: 13px 21px;
+}
+
+.models div:first-of-type p:first-of-type {
+	font-size: 36px;
+	margin: 0;
+}
+
+.models div:first-of-type p {
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+/* discover homepage */
+section.discover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-left: 0;
 }
 
-.actueel h2{
+section.discover h2 {
 	flex: 1 0 100%;
 }
 
-.actueel a{
+section.discover a {
 	flex: 1 0 21%;
+}
+
+/* service homepage */
+section.service {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0;
+}
+
+section.service h2 {
+	flex: 1 0 100%;
+}
+
+section.service a {
+	flex: 1 0 21%;
+}
+
+/* footer */
+footer nav {
+	display: flex;
+	margin: var(--margin);
+}
+
+footer nav section {
+	margin: 0;
+	flex: 1;
+	background-color: #ffffff;
+}
+
+footer nav ul {
+	padding: 0;
+}
+
+footer nav ul li {
+	padding: 8px 0px;
+}
+
+footer nav ul li a {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 1.92857em;
+}
+
+footer>section:last-of-type {
+	margin: 0;
+	padding: var(--padding);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #191f22;
+	color: #ffffff;
+}
+
+footer>section:last-of-type a {
+	color: #ffffff;
 }
