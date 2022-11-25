@@ -160,9 +160,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Interasection obbserver verwerken in website. (Extra surface plane)
+  - Media queries toepassen met prefers reduced motion.
+  - Sommige mensen kunnen hier last van hebben (visueel)
+  - Contrast en kleuren.
+  - Responsive maken voor elke device.
 - ...
 
 </details>
