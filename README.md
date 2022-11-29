@@ -117,20 +117,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | idelene        | student 2          | student 3    | student 4        |
+  | Bahaa          | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | vraag over dit | en dit             | en ik dit    | en dan ik dat    |
-  | en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hoe kan ik mijn website nog meer toegankelijk maken?  | en dit             | en ik dit    | en dan ik dat    |
+  | Wat zou ik nog kunnen toevoegen aan mijn website? | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Interasection obbserver verwerken in website. (Extra surface plane)
+  - Media queries toepassen met prefers reduced motion.
+  - Sommige mensen kunnen hier last van hebben (visueel)
+  - Contrast en kleuren.
+  - Responsive maken voor elke device.
+- ...
 
 </details>
 
