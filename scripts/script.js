@@ -3,22 +3,17 @@ var car = document.querySelectorAll(".car");
 
 car.forEach(item =>
     item.addEventListener('mouseover', event =>
-        item.classList.add('dropdown-active'),
-        document.querySelector(".car nav ul li").focus()
+        item.classList.add('dropdown-active')
+        // document.querySelector(".car nav ul li").focus()
     )
-    // focus();
 );
 car.forEach(item =>
     item.addEventListener('mouseleave', event =>
-        item.classList.remove('dropdown-active'),
+        item.classList.remove('dropdown-active')
     )
 );
 
-// // testing focus function
-// var test = document.querySelector(".test");
-
-// test.addEventListener("click", focus);
-
+// homepage slider
 var swiper = new Swiper(".homepage-swiper", {
     slidesPerView: 1,
     speed: 1500,
@@ -37,6 +32,7 @@ var swiper = new Swiper(".homepage-swiper", {
     },
 });
 
+// configurate slider
 var swiper = new Swiper(".configurate-swiper", {
     slidesPerView: 1,
     speed: 1500,
@@ -51,77 +47,56 @@ var swiper = new Swiper(".configurate-swiper", {
     },
 });
 
-// configurate car
+// configurate car data based on values
 const carImages = {
     "white": [
-        "images/configurate/porsche_white.jpeg",
-        "images/configurate/porsche_white_back.jpeg",
-        "images/configurate/porsche_white_side.jpeg",
-        "images/configurate/porsche_white_above.jpeg",
+        ["images/configurate/porsche_white.jpeg", "Porsche Cayenne White"],
+        ["images/configurate/porsche_white_back.jpeg", "Porsche Cayenne White Back"],
+        ["images/configurate/porsche_white_side.jpeg", "Porsche Cayenne White Side"],
+        ["images/configurate/porsche_white_above.jpeg", "Porsche Cayenne White Above"],
     ],
-    "2": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/30/668/toyota-rush-31398.jpg", // toyota rush
-    "3": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/25/2888/nissan-terra-2021-50929.jpg", // nissan terra
-    "4": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/24/1643/mitsubishi-montero-sport-67797.jpg", // mitsubishi
-    "5": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/17/2677/kia-stonic-97542.jpg", // kia stonic
-    "6": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/7/1886/ford-mustang-45686.jpg", // ford mustang
-    "7": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/25/572/nissan-gt-r-69452.jpg", // nissan gt-r
-    "8": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/51/2018/lamborghini-aventador-70102.jpg", // lamborghini aventador
-    "9": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/30/1851/toyota-wigo-51298.jpg", // toyota wigo
-    "10": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/11/2012/honda-brio-2019-30836.jpg" // honda brio
+    "black": [
+        ["images/configurate/porsche_black.jpeg", "Porsche Cayenne Black"],
+        ["images/configurate/porsche_black_back.jpeg", "Porsche Cayenne Black Back"],
+        ["images/configurate/porsche_black_side.jpeg", "Porsche Cayenne Black Side"],
+        ["images/configurate/porsche_black_above.jpeg", "Porsche Cayenne Black Above"],
+    ],
+    "moonlightblue": [
+        ["images/configurate/porsche_moonlightblue.jpeg", "Porsche Cayenne Moonlightblue"],
+        ["images/configurate/porsche_moonlightblue_back.jpeg", "Porsche Cayenne Moonlightblue Back"],
+        ["images/configurate/porsche_moonlightblue_side.jpeg", "Porsche Cayenne Moonlightblue Side"],
+        ["images/configurate/porsche_moonlightblue_above.jpeg", "Porsche Cayenne Moonlightblue Above"],
+    ],
+    "red": [
+        ["images/configurate/porsche_red.jpeg", "Porsche Cayenne Red"],
+        ["images/configurate/porsche_red_back.jpeg", "Porsche Cayenne Red Back"],
+        ["images/configurate/porsche_red_side.jpeg", "Porsche Cayenne Red Side"],
+        ["images/configurate/porsche_red_above.jpeg", "Porsche Cayenne Red Above"],
+    ],
 };
 
-// var students = {
-//     "ID": ["01", "02", "03", "04"],
-//     "name": ["Patrick", "William", "Elizabeth", "John"],
-//     "age": [18, 19, 19, 20],
-//     "major": ["Biology", "CS", "Literature", "Mathematics"]
-// }
-
+// getting colors items and images
 var color_item = document.querySelectorAll("ul.colors-list li button");
-var image_item = document.querySelector(".swiper-slide img.front");
+var front = document.querySelector(".swiper-slide img.front-car");
+var back = document.querySelector(".swiper-slide img.back-car");
+var side = document.querySelector(".swiper-slide img.side-car");
+var above = document.querySelector(".swiper-slide img.above-car");
 
+// loop for all colors
 color_item.forEach(item =>
     item.addEventListener('click', function () {
-        console.log(item.value);
-        console.log(carImages[item.value][1]);
-        image_item.src = carImages[item.value][1];
+        // this changes the image source and the alt text of the image based on the value
+        // front-side car
+        front.src = carImages[item.value][0][0];
+        front.alt = carImages[item.value][0][1];
+        // back-side
+        back.src = carImages[item.value][1][0];
+        back.alt = carImages[item.value][1][1];
+        // side car
+        side.src = carImages[item.value][2][0];
+        side.alt = carImages[item.value][2][1];
+        // above car
+        above.src = carImages[item.value][3][0];
+        above.alt = carImages[item.value][3][1];
     })
 );
-
-// image.src = carImages[document.getElementById("carSelector").value];
-
-
-// image_item.forEach(item2 =>
-//     // item.src = carImages[color_item.value]
-//     console.log(item2)
-// )
-
-// var image = document.getElementById("carImage");
-// image.src = carImages[document.getElementById("carSelector").value];
-
-// color_item.forEach()(
-//     // console.log()
-// );
-// console.log(color_item);
-
-// color_item.addEventListener("click", change_car);
-
-// function change_car(){
-
-// }
-
-// let colors = [
-//     'red',
-//     'blue',
-//     'purple',
-//     'amber',
-// ];
-
-
-
-
-//   var swiper = new Swiper(".mySwiper", {
-//     pagination: {
-//       el: ".swiper-pagination",
-//     },
-//   });
