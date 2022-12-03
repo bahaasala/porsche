@@ -38,15 +38,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   https://www.porsche.com/netherlands/nl/
 
-  #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepagina  
-  <img src="readme-images/sc-homepage-1.png" width="375px" alt="Porsche Official Homepagina Screenshot 1">
-  <img src="readme-images/sc-homepage-2.png" width="375px" alt="Porsche Official Homepagina Screenshot 2">
+  #### Screenshot(s) van de eerste pagina (small screen - phone): 
+  Homepagina - Phone
+  <img src="readme-images/phone/sc-homepage-phone-1.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 1">
+  <img src="readme-images/phone/sc-homepage-phone-2.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 2">
+  
+  #### Screenshot(s) van de eerste pagina (medium screen - tablet): 
+  Homepagina - Tablet
+  <img src="readme-images/tablet/sc-homepage-tablet-1.png" width="375px" alt="Porsche Official Homepagina Tablet Screenshot 1">
+  <img src="readme-images/tablet/sc-homepage-tablet-2.png" width="375px" alt="Porsche Official Homepagina Tablet Screenshot 2">
 
-  #### Screenshot(s) van de tweede pagina (small screen):
-  Configureren pagina
-  <img src="readme-images/sc-configurate-1.png" width="375px" alt="Porsche Official Configureren Screenshot 1">
-  <img src="readme-images/sc-configurate-2.png" width="375px" alt="Porsche Official Configureren Screenshot 2">
+  #### Screenshot(s) van de eerste pagina (large screen - desktop): 
+  Homepagina - Desktop
+  <img src="readme-images/desktop/sc-homepage-desktop-1.png" width="375px" alt="Porsche Official Homepagina Desktop Screenshot 1">
+  <img src="readme-images/desktop/sc-homepage-desktop-2.png" width="375px" alt="Porsche Official Homepagina Desktop Screenshot 2">
+
+
+  #### Screenshot(s) van de tweede pagina (small screen - phone): 
+  Configureren pagina - Phone
+  <img src="readme-images/phone/sc-config-phone-1.png" width="375px" alt="Porsche Official Configureren Telefoon Screenshot 1">
+  <img src="readme-images/phone/sc-config-phone-2.png" width="375px" alt="Porsche Official Configureren Telefoon Screenshot 2">
+
+  #### Screenshot(s) van de tweede pagina (medium screen - tablet): 
+  Configureren pagin - Tablet
+  <img src="readme-images/tablet/sc-config-tablet-1.png" width="375px" alt="Porsche Official Configureren Tablet Screenshot 1">
+  <img src="readme-images/tablet/sc-config-tablet-2.png" width="375px" alt="Porsche Official Configureren Tablet Screenshot 2"> 
+
+  #### Screenshot(s) van de tweede pagina (large screen - desktop): 
+  Configureren pagin - Desktop
+  <img src="readme-images/desktop/sc-config-desktop-1.png" width="375px" alt="Porsche Official Configureren Desktop Screenshot 1">
+  <img src="readme-images/desktop/sc-config-desktop-2.png" width="375px" alt="Porsche Official Configureren Desktop Screenshot 2"> 
  
 </details>
 
