@@ -40,9 +40,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen - phone): 
   Homepagina - Phone
-  | <img src="readme-images/phone/sc-homepage-phone-1.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 1">     |  <img src="readme-images/phone/sc-homepage-phone-2.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 2"> | 
-<!--   
-  <img src="readme-images/phone/sc-homepage-phone-2.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 2"> -->
+  <img src="readme-images/phone/sc-homepage-phone-1.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 1">
+  <img src="readme-images/phone/sc-homepage-phone-2.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 2">
   
   #### Screenshot(s) van de eerste pagina (medium screen - tablet): 
   Homepagina - Tablet
@@ -80,30 +79,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Bevindingen:
+  - Modellen section is niet toegankelijk. Hier worden alleen de buttons genoemd en dit geeft een geen heldere beeld waar elke item voor bestaat.
+  - Het menu is goed toegankelijk. De gebruiker krijgt de opties te horen van de geselecteerde model wanneer er op gedrukt wordt en het menu is uitgeklapt.
+  - Het configureren pagina is helemaal niet toegankelijk. De kleuren worden niet uitgesproken en de foto's hebben geen alt teksten.
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Deze tekst heb ik uitgevoerd op de twee pagina's die ik ga namaken. Er is uitgebleken dat sommige delen van de pagina's niet toegankelijk genoeg zijn.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Het configureren pagina kan meer toegankelijk worden, want op dit moment is het helemaal niet toegankelijk. De foto's kunnen niet geselecteerd worden en de kleuren worden niet uitgesproken.
+  <img src="readme-images/sc-toegankelijk-1.png" width="375px" alt="Toegankelijkheidstest Configureren Screenshot">
 
+  - Het modellen section kan meer toegankelijk worden door de namen van de modellen ook als links te plaatsen.
+  <img src="readme-images/sc-toegankelijk-2.png" width="375px" alt="Toegankelijkheidstest Modellen Screenshot">
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  n.v.t
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  n.v.t
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  n.v.t
 
 </details>
 
@@ -151,7 +153,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Interasection obbserver verwerken in website. (Extra surface plane)
+  - Interasection observer verwerken in website. (Extra surface plane)
   - Media queries toepassen met prefers reduced motion.
   - Sommige mensen kunnen hier last van hebben (visueel)
   - Contrast en kleuren.
@@ -301,8 +303,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.porsche.com/
+  2. https://www.porsche.com/netherlands/nl/
+  3. https://swiperjs.com
+  4. https://css-tricks.com/snippets/css/complete-guide-grid/
+  5. 
 
 </details>
