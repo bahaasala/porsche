@@ -40,13 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina  
-  <img src="readme-images/sc-homepage-1.jpg" width="375px" alt="Porsche Official Homepagina Screenshot 1">
-  <img src="readme-images/sc-homepage-2.jpg" width="375px" alt="Porsche Official Homepagina Screenshot 2">
+  <img src="readme-images/sc-homepage-1.png" width="375px" alt="Porsche Official Homepagina Screenshot 1">
+  <img src="readme-images/sc-homepage-2.png" width="375px" alt="Porsche Official Homepagina Screenshot 2">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Configureren pagina
-  <img src="readme-images/sc-configurate-1.jpg" width="375px" alt="Porsche Official Configureren Screenshot 1">
-  <img src="readme-images/sc-configurate-2.jpg" width="375px" alt="Porsche Official Configureren Screenshot 2">
+  <img src="readme-images/sc-configurate-1.png" width="375px" alt="Porsche Official Configureren Screenshot 1">
+  <img src="readme-images/sc-configurate-2.png" width="375px" alt="Porsche Official Configureren Screenshot 2">
  
 </details>
 
