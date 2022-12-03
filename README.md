@@ -121,7 +121,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdown/homepage-breakdown.jpg" width="375px" alt="breakdown van homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/breakdown/menu-breakdown.jpg.jpg" width="375px" alt="breakdown van menu">
+  <img src="readme-images/breakdown/menu-breakdown.jpg" width="375px" alt="breakdown van menu">
 
   ### Configureren pagina: 
   <img src="readme-images/breakdown/configureren-breakdown.jpg" width="375px" alt="breakdown van configureren">
