@@ -50,8 +50,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (large screen - desktop): 
   Homepagina - Desktop
-  <img src="readme-images/desktop/sc-homepage-desktop-1.png" width="375px" alt="Porsche Official Homepagina Desktop Screenshot 1">
-  <img src="readme-images/desktop/sc-homepage-desktop-2.png" width="375px" alt="Porsche Official Homepagina Desktop Screenshot 2">
+  <img src="readme-images/desktop/sc-homepage-desktop-1.png" width="675px" alt="Porsche Official Homepagina Desktop Screenshot 1">
+  <img src="readme-images/desktop/sc-homepage-desktop-2.png" width="675px" alt="Porsche Official Homepagina Desktop Screenshot 2">
 
 
   #### Screenshot(s) van de tweede pagina (small screen - phone): 
@@ -66,8 +66,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (large screen - desktop): 
   Configureren pagin - Desktop
-  <img src="readme-images/desktop/sc-config-desktop-1.png" width="375px" alt="Porsche Official Configureren Desktop Screenshot 1">
-  <img src="readme-images/desktop/sc-config-desktop-2.png" width="375px" alt="Porsche Official Configureren Desktop Screenshot 2"> 
+  <img src="readme-images/desktop/sc-config-desktop-1.png" width="675px" alt="Porsche Official Configureren Desktop Screenshot 1">
+  <img src="readme-images/desktop/sc-config-desktop-2.png" width="675px" alt="Porsche Official Configureren Desktop Screenshot 2"> 
  
 </details>
 
@@ -118,13 +118,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Homepagina: 
 
-  <img src="readme-images/breakdown/homepage-breakdown.jpg" width="375px" alt="breakdown van homepagina">
+  <img src="readme-images/breakdown/homepage-breakdown.jpg" width="675px" alt="breakdown van homepagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/breakdown/menu-breakdown.jpg" width="375px" alt="breakdown van menu">
+  <img src="readme-images/breakdown/menu-breakdown.jpg" width="675px" alt="breakdown van menu">
 
   ### Configureren pagina: 
-  <img src="readme-images/breakdown/configureren-breakdown.jpg" width="375px" alt="breakdown van configureren">
+  <img src="readme-images/breakdown/configureren-breakdown.jpg" width="675px" alt="breakdown van configureren">
 
 </details>
 
@@ -140,7 +140,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   Dit ging goed
   - Het maken van het mega menu en de plaatsing van de nav-items. Met dit ben ik met mijn website begonnen, omdat het een uitdagende taak is.
-  <img src="readme-images/reflectie/mega-menu.png" width="375px" alt="mega menu">
+  <img src="readme-images/reflectie/mega-menu.png" width="675px" alt="mega menu">
   
   - Slider aanmaken en goed stijlen. Voor dit ging ik veel zoeken naar oplossingen en handige tools om alle functionaliteiten na te kunnen maken van de slider die op de officiele website staat. Auto-play en smooth scrollen zijn belangrijke functies die de slider mooier en efficient maken. Deze allemaal heb ik gevonden bij swiperjs.com en dit heb ik toegepast in mijn website.
   <img src="readme-images/reflectie/slider-code.png" width="375px" alt="slider code">
