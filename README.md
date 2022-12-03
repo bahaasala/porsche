@@ -187,27 +187,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit ging goed
+  - Het maken van de slider voor het configureren pagina. Dit ging soepel en makkelijk, omdat ik voor de homepagina een soortgelijke slider heb aangemaakt.
+  <img src="readme-images/reflectie/configurate-exterior.png" width="675px" alt="exterior configureren pagina">
+  
+  - Na het goed uitzoeken naar hoe ik het configureren functie werkend kan krijgen en wat ik met de data moet doen, is het mij gelukt om een compacte code te schrijven die ervoor zorgt dat de exterior wordt aangepast en de data op een efficiente manier worden opgeslagen.
+  <img src="readme-images/reflectie/data-js.png" width="375px" alt="data js code">
+  <img src="readme-images/reflectie/exterior-code.png" width="375px" alt="exterior code">
+  <img src="readme-images/reflectie/data-js.png" width="375px" alt="data js code">
+
+
+  Dit ging lastig
+  - Het wijzigen van de interior van een auto. Dit ging lastig, omdat ik alleen een paar slides wil aanspreken. Na veel uitproberen is het mij gelukt om de interior foto's aan te passen zonder dat de exterior foto's worden aangepast.
+  <img src="readme-images/reflectie/configurate-interior.png" width="375px" alt="configureren interior">
+  <img src="readme-images/reflectie/interior-code.png" width="375px" alt="interior code">
+
+
+  Mijn focus voor volgende week
+  - Volgende week ga ik me focussen op responsive design en surface plane elementen in de website toevoegen. Ook ga ik aan de slag met toegankelijkheid en de website goed toegangelijk maken en goed testen.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Bahaa          | student 2          | student 3    | student 4        |
+  | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | Hoe kan ik mijn website nog meer toegankelijk maken?  | en dit             | en ik dit    | en dan ik dat    |
-  | Wat zou ik nog kunnen toevoegen aan mijn website? | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - Interasection obbserver verwerken in website. (Extra surface plane)
-  - Media queries toepassen met prefers reduced motion.
-  - Sommige mensen kunnen hier last van hebben (visueel)
-  - Contrast en kleuren.
-  - Responsive maken voor elke device.
 - ...
 
 </details>
