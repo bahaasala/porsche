@@ -138,7 +138,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit ging goed
+  - Het maken van het mega menu en de plaatsing van de nav-items. Met dit ben ik met mijn website begonnen, omdat het een uitdagende taak is.
+  <img src="readme-images/reflectie/mega-menu.png" width="375px" alt="mega menu">
+  - Slider aanmaken en goed stijlen. Voor dit ging ik veel zoeken naar oplossingen en handige tools om alle functionaliteiten na te kunnen maken van de slider die op de officiele website staat. Auto-play en smooth scrollen zijn belangrijke functies die de slider mooier en efficient maken. Deze allemaal heb ik gevonden bij swiperjs.com en dit heb ik toegepast in mijn website.
+  <img src="readme-images/reflectie/slider-code.png" width="375px" alt="slider code">
+
+
+  Dit ging lastig
+  - De juiste content van de juiste menu-item laten zien. In het begin was het veel uitproberen om de items en de content goed aan elkaar te kunnen koppelen. In het begin had ik een normale loop die het probleem niet oplost. Door middel van foreach te gebruiken heb ik het compact kunnen oplossen.
+  <img src="readme-images/reflectie/menu-functions.png" width="375px" alt="mega menu functions">
+
+
+  Mijn focus voor volgende week
+  - Volgende week ga ik aan de slag met het configureren pagina aan de slag. Hierbij zal ik goed nadenken over hoe ik het configureren pagina goed toegankelijk kan bouwen.
 
 
   ### Agenda voor meeting
