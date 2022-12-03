@@ -40,8 +40,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen - phone): 
   Homepagina - Phone
-  <img src="readme-images/phone/sc-homepage-phone-1.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 1">
-  <img src="readme-images/phone/sc-homepage-phone-2.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 2">
+  | <img src="readme-images/phone/sc-homepage-phone-1.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 1">     |  <img src="readme-images/phone/sc-homepage-phone-2.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 2"> | 
+<!--   
+  <img src="readme-images/phone/sc-homepage-phone-2.png" width="375px" alt="Porsche Official Homepagina Telefoon Screenshot 2"> -->
   
   #### Screenshot(s) van de eerste pagina (medium screen - tablet): 
   Homepagina - Tablet
