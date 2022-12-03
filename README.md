@@ -194,7 +194,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Na het goed uitzoeken naar hoe ik het configureren functie werkend kan krijgen en wat ik met de data moet doen, is het mij gelukt om een compacte code te schrijven die ervoor zorgt dat de exterior wordt aangepast en de data op een efficiente manier worden opgeslagen.
   <img src="readme-images/reflectie/data-js.png" width="375px" alt="data js code">
   <img src="readme-images/reflectie/exterior-code.png" width="375px" alt="exterior code">
-  <img src="readme-images/reflectie/data-js.png" width="375px" alt="data js code">
 
 
   Dit ging lastig
