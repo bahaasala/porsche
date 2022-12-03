@@ -74,6 +74,9 @@ h2 {
 }
 
 /* Navigation bar */
+header{
+	border-bottom: solid 1px #f00;
+}
 header nav {
 	display: flex;
 	flex-direction: row;
@@ -140,10 +143,19 @@ header nav ul:nth-child(2) {
 	padding-left: 20px;
 }
 
-header nav ul:last-child {
-	order: 0;
-	flex: 0 1 auto;
-	align-self: auto;
+/* Second menu */
+ul.links {
+    order: 0;
+    flex: 1 1 auto;
+	justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 55px;
+    padding-top: 0;
+    /* margin-bottom: 0; */
+    padding-left: 20px;
+}
+ul.links li {
+    padding: 0px 20px;
 }
 
 /* mega dropdown menu */
@@ -160,8 +172,7 @@ header nav nav {
 	background: #ffffff;
 	padding: var(--margin);
 	overflow: hidden;
-	/* transition: 2s; */
-	/* border-top: solid 2px #cccccc; */
+	/* border-top: solid 1px #ffffff; */
 }
 
 header nav nav ul {
@@ -173,9 +184,16 @@ header nav nav ul {
 /* first list */
 body .dropdown-active nav {
 	max-height: 2000px;
+	/* border-top: solid 1px #cccccc; */
+	/* border-top: solid 1px #cccccc; */
 	/* z-index: 998; */
 	/* transition: 0.5s ease-in-out; */
 	/* border-top: solid 0px #f00; */
+}
+
+body .dropdown-active header{
+	border: solid 5px;
+	background-color: #f00;
 }
 
 header nav nav ul:first-of-type {
@@ -528,16 +546,20 @@ body .swiper-pagination-bullet {
 	margin: var(--margin);
 	margin-top: 100px;
 }
+.main-configurate section{
+	margin: 0 2vw;
+}
 
 /* colors */
-ul.colors-list {
+ul.colors-list, ul.interior-colors-list {
 	display: flex;
     padding: 0;
     gap: 20px;
 }
-ul.colors-list li button {
+ul.colors-list li button, ul.interior-colors-list li button {
     height: 60px;
     width: 60px;
+	border: none;
 }
 .black{
 	background-color: #000;
@@ -550,4 +572,10 @@ ul.colors-list li button {
 }
 .red{
 	background-color: #990033;
+}
+.red-black{
+	background: linear-gradient(0deg, #782f2f 50%, #000 50%);
+}
+.blue-gray{
+	background: linear-gradient(0deg, #556775 50%, #c7c7bf 50%);
 }

@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Bahaa Salaymeh
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Zwart
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive en Surface Plane
  
 </details>
 
@@ -36,15 +36,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.porsche.com/netherlands/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepagina  
+  <img src="readme-images/sc-homepage-1.jpg" width="375px" alt="Porsche Official Homepagina Screenshot 1">
+  <img src="readme-images/sc-homepage-2.jpg" width="375px" alt="Porsche Official Homepagina Screenshot 2">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Configureren pagina
+  <img src="readme-images/sc-configurate-1.jpg" width="375px" alt="Porsche Official Configureren Screenshot 1">
+  <img src="readme-images/sc-configurate-2.jpg" width="375px" alt="Porsche Official Configureren Screenshot 2">
  
 </details>
 
