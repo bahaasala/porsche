@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 button,
 summary {
 	cursor: pointer;
@@ -24,8 +28,17 @@ summary {
 }
 
 
-
 /* General */
+
+main {
+	margin-top: 123px;
+	display: none;
+}
+
+footer {
+	display: none;
+}
+
 body {
 	color: var(--color-text);
 	background-color: var(--color-background);
@@ -35,6 +48,10 @@ body {
 img {
 	width: 100%;
 	;
+}
+
+video {
+	width: 100%;
 }
 
 h1,
@@ -51,6 +68,21 @@ span {
 
 section {
 	margin: var(--margin);
+	transform: translateY(50px);
+	opacity: 0;
+	transition-property: transform, opacity;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+section.full-width {
+	margin: 0;
+}
+
+/* Fading sections when scrolling  */
+.in-view {
+	transform: none;
+	opacity: 1;
 }
 
 a {
@@ -74,9 +106,15 @@ h2 {
 }
 
 /* Navigation bar */
-header{
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 999;
 	border-bottom: solid 1px #f00;
 }
+
 header nav {
 	display: flex;
 	flex-direction: row;
@@ -85,6 +123,10 @@ header nav {
 	align-content: stretch;
 	align-items: flex-start;
 	margin: var(--margin);
+}
+
+header nav.mobile-header-items{
+	display: none;
 }
 
 /* Cars in menu */
@@ -145,17 +187,18 @@ header nav ul:nth-child(2) {
 
 /* Second menu */
 ul.links {
-    order: 0;
-    flex: 1 1 auto;
+	order: 0;
+	flex: 1 1 auto;
 	justify-content: center;
-    align-self: flex-end;
-    margin-bottom: 55px;
-    padding-top: 0;
-    /* margin-bottom: 0; */
-    padding-left: 20px;
+	align-self: flex-end;
+	margin-bottom: 55px;
+	padding-top: 0;
+	/* margin-bottom: 0; */
+	padding-left: 20px;
 }
+
 ul.links li {
-    padding: 0px 20px;
+	padding: 0px 20px;
 }
 
 /* mega dropdown menu */
@@ -191,7 +234,7 @@ body .dropdown-active nav {
 	/* border-top: solid 0px #f00; */
 }
 
-body .dropdown-active header{
+body .dropdown-active header {
 	border: solid 5px;
 	background-color: #f00;
 }
@@ -242,26 +285,52 @@ header nav nav img {
 
 /* Models homepage */
 .models ul {
-	/* display: grid; */
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
 	margin: 0;
 	padding: 0em;
 	list-style: none;
-	/* flex-wrap: wrap; */
-	/* justify-content: center; */
-	/* padding-left: 0; */
-	/* margin: 0; */
-	/* display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px; */
-}
-
-.models ul {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
-	/* gap: 1em; */
 }
 
 .models ul li {
+	/* display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	row-gap: .2em;
+	padding:.8em; */
+	/* display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	justify-content: center; */
+}
+
+.models img {}
+
+/* .models ul li h3 {
+	margin: 0;
+	line-height: 1em;
+	grid-column: 1/-1;
+	grid-row-start: 1;
+	z-index: 100;
+}
+
+.models ul li p {
+	margin: 0;
+	line-height: 1em;
+	grid-column: 1/-1;
+	grid-row-start: 2;
+	z-index: 100;
+} */
+
+.models ul li a {
+	/* grid-column-start: 2;
+	grid-row: 1/3;
+	justify-self: end;
+	align-self: start;
+	z-index: 200; */
+}
+
+/* .models ul li {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	row-gap: 0.2em;
@@ -278,73 +347,17 @@ header nav nav img {
 }
 
 .models ul li p {
-    grid-column: 1/-1;
-    grid-row-start: 2;
-    z-index: 50;
-    line-height: 1em;
-}
+	grid-column: 1/-1;
+	grid-row-start: 2;
+	z-index: 50;
+	line-height: 1em;
+} */
 
-.models ul li img {
+/* .models ul li img {
 	grid-area: 1 / 1 / -1 / -1;
 	justify-self: end;
 	align-self: stretch;
 	height: 100%;
-}
-
-.models ul li a:first-of-type {
-	/* grid-column: 1/-1;
-	grid-row-start: 3;
-	z-index: 50;
-	margin: 0;
-	display: grid;
-	grid-template-columns: min-content;
-	line-height: 1em; */
-}
-.models ul li a:nth-of-type(2) {
-	/* grid-column: 1/-1;
-	grid-row-start: 3;
-	z-index: 50;
-	margin: 0;
-	display: grid;
-	grid-template-columns: min-content;
-	line-height: 1em; */
-}
-
-/* .models>ul>li {
-	position: relative;
-	flex: 0 0 33.333333%;
-	margin-bottom: -4px;
-}
-
-.models .model-content {
-	position: absolute;
-	top: 0;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	height: 100%;
-	width: 100%;
-	padding: 15px 30px 50px 30px;
-} */
-/* 
-.models p {
-	color: #fff;
-	font-weight: bold;
-}
-
-.models a {
-	background-color: #fff;
-	padding: 13px 21px;
-}
-
-.models div:first-of-type p:first-of-type {
-	font-size: 36px;
-	margin: 0;
-}
-
-.models div:first-of-type p {
-	font-size: 20px;
-	margin-top: 5px;
 } */
 
 /* discover homepage */
@@ -536,7 +549,7 @@ body .swiper-pagination-bullet {
 
 
 /* Configurate page */
-.main-configurate{
+.main-configurate {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -544,38 +557,198 @@ body .swiper-pagination-bullet {
 	align-content: stretch;
 	align-items: flex-start;
 	margin: var(--margin);
-	margin-top: 100px;
+	margin-top: 200px;
 }
-.main-configurate section{
+
+.main-configurate>section:nth-of-type(2) {
 	margin: 0 2vw;
 }
 
 /* colors */
-ul.colors-list, ul.interior-colors-list {
+ul.colors-list,
+ul.interior-colors-list {
 	display: flex;
-    padding: 0;
-    gap: 20px;
+	padding: 0;
+	gap: 20px;
 }
-ul.colors-list li button, ul.interior-colors-list li button {
-    height: 60px;
-    width: 60px;
+
+ul.colors-list li button,
+ul.interior-colors-list li button {
+	height: 60px;
+	width: 60px;
 	border: none;
 }
-.black{
+
+.black {
 	background-color: #000;
 }
-.white{
+
+.white {
 	background-color: #efefef;
 }
-.moonlightblue{
+
+.moonlightblue {
 	background-color: #000033;
 }
-.red{
+
+.red {
 	background-color: #990033;
 }
-.red-black{
+
+.red-black {
 	background: linear-gradient(0deg, #782f2f 50%, #000 50%);
 }
-.blue-gray{
+
+.blue-gray {
 	background: linear-gradient(0deg, #556775 50%, #c7c7bf 50%);
+}
+
+/* loader */
+ul.colors-list li button.active,
+ul.interior-colors-list li button.active {
+	box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 16%);
+	transform: scale(1.2);
+}
+
+.loader {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+
+.loader:after {
+	content: " ";
+	display: block;
+	width: 34px;
+	height: 34px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+
+/* Animation loader */
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes slide-in-left {
+	0% {
+		-webkit-transform: translateX(1000px);
+		transform: translateX(1000px);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+@media (prefers-reduced-motion) {
+	section {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 786px) {
+	/* header responsive */
+	header.full-height-header{
+		height: 100%;
+	}
+	/* displaying header nav */
+	header nav.mobile-header-items {
+		display: flex;
+	}
+	header nav.mobile-header-items {
+		height: 60px;
+		margin: 0px 15px;
+		place-content: stretch space-between;
+	}
+	/* logo responsive */
+	header>nav>a>img {
+		width: 100px;
+		height: auto;
+		padding: 8px 0px;
+	}
+	/* open and close menu buttons */
+	a.mobile-menu-btn {
+		margin-top: 20px;
+	}
+	a.mobile-menu-close-btn {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 9999;
+	}
+	a.back-menu-btn {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 9999;
+	}
+	/* hiding main desktop header */
+	header nav:first-of-type {
+		display: none;
+	}
+	header nav:first-of-type>a>img{
+		display: none;
+	}
+	/* showing reponsive header */
+	header nav.mobile-menu {
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding: 0;
+		margin: 0;
+		z-index: 99999;
+		background: #ffffff;
+		transition: all .3s linear;
+		-webkit-animation: slide-in-left 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+		animation: slide-in-left 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+	}
+	/* first list cars */
+	header nav.mobile-menu ul:first-of-type {
+		flex-wrap: wrap;
+		padding: 2.5em 1.5rem 0px 1.5rem;
+	}
+	header nav ul button {
+		width: 50%;
+	}
+	header nav ul p {
+		padding-bottom: 20px;
+	}
+	/* second list*/
+	header nav ul.links {
+		display: block;
+		padding: 0px 1.5rem 0px 1.5rem;
+	}
+	header nav ul.links li {
+		padding: 10px 0px;
+	}
+	/* details menu */
+	header nav.mobile-menu ul nav {
+		display: block;
+		top: 0;
+		overflow: scroll;
+		height: 100%;
+	}
+	/* homepage video */
+	video {
+		object-fit: cover;
+		height: 600px;
+	}
 }

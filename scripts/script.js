@@ -2,18 +2,16 @@
 var header = document.querySelector("header");
 var car = document.querySelectorAll(".car");
 
-console.log(header );
-
 car.forEach(item =>
     item.addEventListener('mouseover', function () {
-    item.classList.add('dropdown-active');
+        item.classList.add('dropdown-active');
         header.classList.add('grey-header');
     })
 );
 
 car.forEach(item =>
     item.addEventListener('mouseleave', function () {
-    item.classList.remove('dropdown-active');
+        item.classList.remove('dropdown-active');
         header.classList.remove('grey-header');
     })
 );
@@ -103,6 +101,12 @@ var interior = document.querySelector("section.configurate-swiper li:first-of-ty
 var interior2 = document.querySelector("section.configurate-swiper li:nth-of-type(6) img");
 // var interior2 = document.querySelector("li.swiper-slide:nth-of-type img");
 
+
+// loader
+// const btn = document.querySelector(".button");
+
+// btn.classList.add("button--loading");
+// btn.classList.remove("button--loading");
 // loop for all colors
 color_item.forEach(item =>
     item.addEventListener('click', function () {
@@ -121,10 +125,19 @@ color_item.forEach(item =>
         // above car
         above.src = carImages[item.value][3][0];
         above.alt = carImages[item.value][3][1];
+        // loader
+        setTimeout(() => {
+            item.classList.add("loader");
+        }, 100);
+        setTimeout(() => {
+            item.classList.remove("loader");
+        }, 500);
+        
+        var btn_active = document.querySelector("ul.colors-list li button.active");
+        if (btn_active) btn_active.classList.remove("active");
+        item.classList.add("active");
     })
 );
-
-console.log(interior);
 
 interior_colors_item.forEach(item =>
     item.addEventListener('click', function () {
@@ -133,5 +146,65 @@ interior_colors_item.forEach(item =>
         interior.alt = carImages[item.value][0][1];
         interior2.src = carImages[item.value][0][0];
         interior2.alt = carImages[item.value][0][1];
+        // loader
+        setTimeout(() => {
+            item.classList.add("loader");
+        }, 100);
+        setTimeout(() => {
+            item.classList.remove("loader");
+        }, 500);
+        var btn_active = document.querySelector("ul.interior-colors-list li button.active");
+        if (btn_active) btn_active.classList.remove("active");
+        item.classList.add("active");
     })
 );
+
+
+
+/**************************************************************/
+/* intersection observer --> fades elements in when scrolling */
+/**************************************************************/
+
+const observerOptions = {
+    root: null,
+    threshold: 0,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+window.addEventListener('DOMContentLoaded', (event) => {
+
+    const sections = Array.from(document.querySelectorAll('section'));
+
+    for (let section of sections) {
+        observer.observe(section);
+    }
+
+});
+
+// menu mobile
+var menu_btn = document.querySelector(".mobile-menu-btn");
+var close_menu_btn = document.querySelector(".mobile-menu-close-btn");
+var menu_list = document.querySelector("header nav");
+var header = document.querySelector("header");
+
+menu_btn.addEventListener("click", open_menu)
+close_menu_btn.addEventListener("click", close_menu);
+
+function open_menu(){
+    menu_list.classList.add("mobile-menu");
+    header.classList.add("full-height-header");
+}
+function close_menu(){
+    menu_list.classList.remove("mobile-menu");
+    header.classList.remove("full-height-header");
+}
+console.log(menu_list);

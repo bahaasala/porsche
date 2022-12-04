@@ -324,14 +324,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
-
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
   1. https://www.porsche.com/
   2. https://www.porsche.com/netherlands/nl/
   3. https://swiperjs.com
   4. https://css-tricks.com/snippets/css/complete-guide-grid/
-  5. 
+  5. https://dev.to/jslim/fading-up-sections-using-intersection-observer-3fhj
+  6. https://loading.io/css/
 
 </details>
