@@ -21,11 +21,11 @@
 <body>
 	<header>
 		<nav>
-			<a href="/">
+			<a href="/" tabindex="1">
 				<img src="images/porsche-logo.png" alt="Porsche logo">
 			</a>
 			<ul>
-				<button class="car">
+				<button class="car" tabindex="2">
 					<!-- <a href="#"> -->
 					<img src="images/series-assets/718.jpg">
 					<p>718</p>
@@ -34,7 +34,7 @@
 						<img class="test" src="images/series-assets/mega-menu/718.jpeg">
 						<ul>
 							<li>718</li>
-							<a href="/test">
+							<a>
 								<li>Configureren</li>
 							</a>
 							<li>Vergelijken</li>
@@ -50,7 +50,7 @@
 					</nav>
 				</button>
 
-				<button class="car">
+				<button class="car" tabindex="3">
 					<!-- <a href="#"> -->
 					<img src="images/series-assets/911.jpeg">
 					<p>911</p>
@@ -75,7 +75,7 @@
 						</ul>
 					</nav>
 				</button>
-				<button class="car">
+				<button class="car" tabindex="4">
 					<!-- <a href="#"> -->
 					<img src="images/series-assets/taycan.jpeg">
 					<p>Taycan</p>
@@ -93,7 +93,7 @@
 						</ul>
 					</nav>
 				</button>
-				<button class="car">
+				<button class="car" tabindex="5">
 					<!-- <a href="#"> -->
 					<img src="images/series-assets/panamera.jpeg">
 					<p>Panamera</p>
@@ -113,7 +113,7 @@
 						</ul>
 					</nav>
 				</button>
-				<button class="car">
+				<button class="car" tabindex="6">
 					<!-- <a href="#"> -->
 					<img src="images/series-assets/macan.jpeg">
 					<p>Macan</p>
@@ -131,7 +131,7 @@
 						</ul>
 					</nav>
 				</button>
-				<button class="car">
+				<button class="car" tabindex="7">
 					<!-- <a href="#"> -->
 					<img src="images/series-assets/cayenne.jpeg">
 					<p>Cayenne</p>
@@ -176,10 +176,10 @@
 				</svg>
 			</a>
 			<a class="back-menu-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px"
-				height="20px">
-				<path d="M15.25 4h-1.26L8 12l5.99 8h1.26l-6-8 6-8z"></path>
-			</svg>Menu
-		</a>
+					height="20px">
+					<path d="M15.25 4h-1.26L8 12l5.99 8h1.26l-6-8 6-8z"></path>
+				</svg>Menu
+			</a>
 		</nav>
 		<nav class="mobile-header-items">
 			<a href="/">
@@ -247,32 +247,70 @@
 			<h2>Modellen</h2>
 			<ul>
 				<li>
-					<h3>718</h3>
-					<p>Vanaf € 93.600,00 (consumentenadviesprijs)</p>
-					<a>Configureren</a>
-					<a>Alle modellen</a>
-					<img src="images/models/porsche-718.jpeg">
+					<img src="images/models/porsche-718.jpeg" alt="Porsche 718">
+						<section>
+							<h3>718</h3>
+							<p>Vanaf € 93.600,00 (consumentenadviesprijs)</p>
+						</section>
+						<section>
+							<a>Configureren</a>
+							<a>Alle modellen</a>
+						</section>
 				</li>
 				<li>
-					<h3>718</h3>
-					<p>Vanaf € 93.600,00 (consumentenadviesprijs)</p>
-					<a>Configureren</a>
-					<a>Alle modellen</a>
-					<img src="images/models/porsche-718.jpeg">
+					<img src="images/models/porsche-911.jpeg" alt="Porsche 911">
+						<section>
+							<h3>911</h3>
+							<p>Vanaf € 159.200,00 (consumentenadviesprijs)</p>
+						</section>
+						<section>
+							<a>Configureren</a>
+							<a>Alle modellen</a>
+						</section>
 				</li>
 				<li>
-					<h3>718</h3>
-					<p>Vanaf € 93.600,00 (consumentenadviesprijs)</p>
-					<a>Configureren</a>
-					<a>Alle modellen</a>
-					<img src="images/models/porsche-718.jpeg">
+					<img src="images/models/porsche-taycan.jpeg" alt="Porsche Taycan">
+						<section>
+							<h3>Taycan</h3>
+							<p>Vanaf € 93.500,00 (consumentenadviesprijs)</p>
+						</section>
+						<section>
+							<a>Configureren</a>
+							<a>Alle modellen</a>
+						</section>
 				</li>
 				<li>
-					<h3>718</h3>
-					<p>Vanaf € 93.600,00 (consumentenadviesprijs)</p>
-					<a>Configureren</a>
-					<a>Alle modellen</a>
-					<img src="images/models/porsche-718.jpeg">
+					<img src="images/models/porsche-panamera.jpeg" alt="Porsche Panamera">
+						<section>
+							<h3>Panamera</h3>
+							<p>Vanaf € 124.900,00 (consumentenadviesprijs)</p>
+						</section>
+						<section>
+							<a>Configureren</a>
+							<a>Alle modellen</a>
+						</section>
+				</li>
+				<li>
+					<img src="images/models/porsche-macan.jpeg" alt="Porsche Macan">
+						<section>
+							<h3>Macan</h3>
+							<p>Vanaf € 109.000,00 (consumentenadviesprijs)</p>
+						</section>
+						<section>
+							<a>Configureren</a>
+							<a>Alle modellen</a>
+						</section>
+				</li>
+				<li>
+					<img src="images/models/porsche-cayenne.jpeg" alt="Porsche Cayenne">
+						<section>
+							<h3>Cayenne</h3>
+							<p>Vanaf € 109.000,00 (consumentenadviesprijs)</p>
+						</section>
+						<section>
+							<a>Configureren</a>
+							<a>Alle modellen</a>
+						</section>
 				</li>
 			</ul>
 		</section>

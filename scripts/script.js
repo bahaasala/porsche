@@ -1,11 +1,20 @@
 // navigation menu animation
 var header = document.querySelector("header");
 var car = document.querySelectorAll(".car");
+var car_sub_items = document.querySelectorAll("nav ul li");
+
+
 
 car.forEach(item =>
     item.addEventListener('mouseover', function () {
         item.classList.add('dropdown-active');
         header.classList.add('grey-header');
+        // console.log(item);
+        // document.querySelector(".car nav ul li:first-of-type").tabIndex = 1;
+        // item.tabIndex = 1;
+        // item.forEach(item =>
+        //     item.tabIndex = 1
+        // )
     })
 );
 
@@ -13,6 +22,10 @@ car.forEach(item =>
     item.addEventListener('mouseleave', function () {
         item.classList.remove('dropdown-active');
         header.classList.remove('grey-header');
+        // document.querySelector(".car nav ul li:first-of-type").tabIndex = 0;
+        // car_sub_items.forEach(item =>
+        //     item.tabIndex = 0
+        // )
     })
 );
 
@@ -132,7 +145,7 @@ color_item.forEach(item =>
         setTimeout(() => {
             item.classList.remove("loader");
         }, 500);
-        
+
         var btn_active = document.querySelector("ul.colors-list li button.active");
         if (btn_active) btn_active.classList.remove("active");
         item.classList.add("active");
@@ -199,12 +212,12 @@ var header = document.querySelector("header");
 menu_btn.addEventListener("click", open_menu)
 close_menu_btn.addEventListener("click", close_menu);
 
-function open_menu(){
+function open_menu() {
     menu_list.classList.add("mobile-menu");
     header.classList.add("full-height-header");
 }
-function close_menu(){
+
+function close_menu() {
     menu_list.classList.remove("mobile-menu");
     header.classList.remove("full-height-header");
 }
-console.log(menu_list);
