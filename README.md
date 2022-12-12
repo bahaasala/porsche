@@ -298,7 +298,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/last/sc-porsche-homepage-desktop.png" width="675px" alt="Porsche Homepage Desktop">
+  <img src="readme-images/last/sc-porsche-configurate-desktop.png" width="675px" alt="Porsche Configurate Desktop">
+  <img src="readme-images/last/sc-contrast-desktop.png" width="675px" alt="Porsche Contrast">
+  <img src="readme-images/last/sc-porsche-homepage-phone.png" width="375px" alt="Porsche Homepage Phone">
+  <img src="readme-images/last/sc-porsche-configurate-phone.png" width="375px" alt="Porsche Configurate Phone">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -309,8 +313,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  <img src="readme-images/last/sc-porsche-details-menu-phone.png" width="375px" alt="Porsche Configurate Phone">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
 </details>
 
 
