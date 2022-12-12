@@ -1,4 +1,4 @@
-// navigation menu animation
+// navigation mega menu
 var header = document.querySelector("header");
 var car = document.querySelectorAll(".car");
 var car_sub_items = document.querySelectorAll("nav ul li");
@@ -9,12 +9,6 @@ car.forEach(item =>
     item.addEventListener('mouseover', function () {
         item.classList.add('dropdown-active');
         header.classList.add('grey-header');
-        // console.log(item);
-        // document.querySelector(".car nav ul li:first-of-type").tabIndex = 1;
-        // item.tabIndex = 1;
-        // item.forEach(item =>
-        //     item.tabIndex = 1
-        // )
     })
 );
 
@@ -22,12 +16,27 @@ car.forEach(item =>
     item.addEventListener('mouseleave', function () {
         item.classList.remove('dropdown-active');
         header.classList.remove('grey-header');
-        // document.querySelector(".car nav ul li:first-of-type").tabIndex = 0;
-        // car_sub_items.forEach(item =>
-        //     item.tabIndex = 0
-        // )
     })
 );
+
+// menu mobile
+var menu_btn = document.querySelector(".mobile-menu-btn");
+var close_menu_btn = document.querySelector(".mobile-menu-close-btn");
+var menu_list = document.querySelector("header nav");
+var header = document.querySelector("header");
+
+menu_btn.addEventListener("click", open_menu);
+close_menu_btn.addEventListener("click", close_menu);
+
+function open_menu() {
+    menu_list.classList.add("mobile-menu");
+    header.classList.add("full-height-header");
+}
+
+function close_menu() {
+    menu_list.classList.remove("mobile-menu");
+    header.classList.remove("full-height-header");
+}
 
 // homepage slider
 var swiper = new Swiper(".homepage-swiper", {
@@ -100,7 +109,7 @@ const carImages = {
     ]
 };
 
-// getting colors items and images
+// getting items colors and images
 var color_item = document.querySelectorAll("ul.colors-list li button");
 var interior_colors_item = document.querySelectorAll("ul.interior-colors-list li button");
 // Interior images items
@@ -112,14 +121,8 @@ var above = document.querySelector(".swiper-slide img.above-car");
 // Exterior images items
 var interior = document.querySelector("section.configurate-swiper li:first-of-type img");
 var interior2 = document.querySelector("section.configurate-swiper li:nth-of-type(6) img");
-// var interior2 = document.querySelector("li.swiper-slide:nth-of-type img");
 
 
-// loader
-// const btn = document.querySelector(".button");
-
-// btn.classList.add("button--loading");
-// btn.classList.remove("button--loading");
 // loop for all colors
 color_item.forEach(item =>
     item.addEventListener('click', function () {
@@ -145,7 +148,7 @@ color_item.forEach(item =>
         setTimeout(() => {
             item.classList.remove("loader");
         }, 500);
-
+        // active
         var btn_active = document.querySelector("ul.colors-list li button.active");
         if (btn_active) btn_active.classList.remove("active");
         item.classList.add("active");
@@ -166,6 +169,7 @@ interior_colors_item.forEach(item =>
         setTimeout(() => {
             item.classList.remove("loader");
         }, 500);
+        // active
         var btn_active = document.querySelector("ul.interior-colors-list li button.active");
         if (btn_active) btn_active.classList.remove("active");
         item.classList.add("active");
@@ -203,21 +207,29 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
-// menu mobile
-var menu_btn = document.querySelector(".mobile-menu-btn");
-var close_menu_btn = document.querySelector(".mobile-menu-close-btn");
-var menu_list = document.querySelector("header nav");
-var header = document.querySelector("header");
 
-menu_btn.addEventListener("click", open_menu)
-close_menu_btn.addEventListener("click", close_menu);
+/* contrast and large font functions */
+var body = document.querySelector('body');
+var contrastBtn = document.querySelector('.contrast-btn');
+var largerFontBtn = document.querySelector('.larger-font');
 
-function open_menu() {
-    menu_list.classList.add("mobile-menu");
-    header.classList.add("full-height-header");
+contrastBtn.addEventListener('click', changeContrast);
+largerFontBtn.addEventListener('click', resizeFont);
+
+function changeContrast(){
+    body.classList.toggle('contrast');
+    if(contrastBtn.textContent == "Contrast verhogen"){
+        contrastBtn.textContent = "Kleuren tonen";
+    } else{
+        contrastBtn.textContent = "Contrast verhogen";
+    }
 }
 
-function close_menu() {
-    menu_list.classList.remove("mobile-menu");
-    header.classList.remove("full-height-header");
+function resizeFont(){
+    body.classList.toggle('large-font');
+    if(largerFontBtn.textContent == "Tekst vergroten"){
+        largerFontBtn.textContent = "Tekst verkleinen";
+    } else{
+        largerFontBtn.textContent = "Tekst vergroten";
+    }
 }

@@ -232,30 +232,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Getest door (Esra Kahraman 09-12-2022)
+  - Main menu en mega menu beter met toetsenbord laten bedienen.
+  - Contrast is een handige functie en dit verbetert de website in toegankelijkheid.
+  - Modellen naam toegankelijk maken.
+  - Kleuren van exterieur worden herhaald met de screenreader.
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Getest door (Esra Kahraman 09-12-2022)
+  - Problemen met de navigation bar. Sub items in mega menu worden voor altijd geselecteerd. Het is de bedoeling dat deze worden geselecteerd pas wanneer het menu is uitgeklapt.
+  - Modellen section is niet toegankelijk. Configureren en alle modellen buttons geven niet aan om welke model het gaat.
+  - Herhaling van zinnen bij configureren pagina.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  n.v.t
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  n.v.t
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  n.v.t
 
 </details>
 
@@ -331,5 +327,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   4. https://css-tricks.com/snippets/css/complete-guide-grid/
   5. https://dev.to/jslim/fading-up-sections-using-intersection-observer-3fhj
   6. https://loading.io/css/
+  7. https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/#:~:text=A%20%22skip%20to%20content%22%20link,when%20it%20is%20in%20focus.
+  8. 
 
 </details>
