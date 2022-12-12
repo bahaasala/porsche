@@ -298,23 +298,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+  - Porsche - Desktop
   <img src="readme-images/last/sc-porsche-homepage-desktop.png" width="675px" alt="Porsche Homepage Desktop">
   <img src="readme-images/last/sc-porsche-configurate-desktop.png" width="675px" alt="Porsche Configurate Desktop">
+
+  - Porsche - Contrast & Large Font
   <img src="readme-images/last/sc-contrast-desktop.png" width="675px" alt="Porsche Contrast">
+
+  - Porsche - Phone
   <img src="readme-images/last/sc-porsche-homepage-phone.png" width="375px" alt="Porsche Homepage Phone">
   <img src="readme-images/last/sc-porsche-configurate-phone.png" width="375px" alt="Porsche Configurate Phone">
 
 
-  ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  ### Dit ging goed/Heb ik geleerd:
+  - Media queries voor contrast en reduce motion.
+  - Het maken van een mega menu.
+  - Verschillende foto's kunnen aanpassen met javascript en ook de alt tekst toevoegen.
+  - Foreach loops en het schrijven van een compacte js code.
+  - Grid en flex-boxes.
+  - Focus, Active en ook animaties met css.
+  - IntersectionObserver met JS.
+  - Het maken van sliders.
+  - CSS variabelen.
+  - De website toegankelijk maken en testen.
+  
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Het details menu op telefoon met een animatie op de tweede details pagina.
+  - Switchen naar laatste slide wanneer er op een interior kleur wordt gedrukt.
+  - Transition wanneer het mega menu sluit.
   <img src="readme-images/last/sc-porsche-details-menu-phone.png" width="375px" alt="Porsche Configurate Phone">
-
 
 </details>
 
